@@ -14,7 +14,7 @@ ExternalProject_Add(opencv3_src
   UPDATE_COMMAND ""
   PATCH_COMMAND cd ../opencv3_src/
   CONFIGURE_COMMAND cd ../opencv3_src && cmake
-    -D OPENCV_EXTRA_MODULES_PATH=${CMAKE_SOURCE_DIR}/opencv_contrib/modules .
+    -D OPENCV_EXTRA_MODULES_PATH=${CMAKE_SOURCE_DIR}/../opencv_contrib/modules .
     -D WITH_QT=ON
     -D WITH_OPENGL=ON
     -D WITH_VTK=ON

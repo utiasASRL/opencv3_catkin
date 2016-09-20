@@ -10,7 +10,7 @@ include(ExternalProject)
 file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
 
 ExternalProject_Add(opencv3_src
-  URL https://github.com/Itseez/opencv/archive/3.0.0-beta.zip
+  URL https://github.com/opencv/opencv/archive/3.1.0.zip
   UPDATE_COMMAND ""
   PATCH_COMMAND cd ../opencv3_src/
   CONFIGURE_COMMAND cd ../opencv3_src && cmake
